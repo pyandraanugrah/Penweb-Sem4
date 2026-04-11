@@ -1,0 +1,323 @@
+/* ===========================
+   CSS Variables & Reset
+   =========================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:          #2e3f5c;
+  --bg-dark:     #263550;
+  --text-light:  #e8edf5;
+  --text-muted:  #b0bdd0;
+  --badge-bg:    #f0f3f8;
+  --badge-text:  #2e3f5c;
+  --btn-bg:      #f0f3f8;
+  --btn-text:    #2e3f5c;
+  --btn-hover:   #d8e0ee;
+  --divider:     rgba(255,255,255,0.18);
+  --font:        'Plus Jakarta Sans', sans-serif;
+  --radius:      999px;
+  --photo-radius: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+/* ===========================
+   Navbar
+   =========================== */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 56px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 9px 24px;
+  border: 2px solid var(--text-light);
+  border-radius: var(--radius);
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-color: var(--btn-bg);
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 64px 80px 72px;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---- Left Column ---- */
+.hero-left {
+  flex: 1;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 28px;
+  width: fit-content;
+}
+
+/* Hero Title */
+.hero-title {
+  line-height: 1.18;
+  margin-bottom: 22px;
+}
+
+.halo {
+  font-size: 2.85rem;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.name {
+  font-size: 2.85rem;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+/* Description */
+.hero-desc {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Skills Row */
+.skills-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.skills-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.skill-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icons img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.skill-icons img:hover {
+  transform: translateY(-3px);
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--divider);
+  margin-bottom: 24px;
+}
+
+/* Social Row */
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: var(--text-light);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.social-icons a:hover {
+  color: #a8c4e0;
+  transform: translateY(-2px);
+}
+
+/* ---- Right Column ---- */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding-top: 36px;
+}
+
+/* Profile Photo */
+.photo-wrapper {
+  width: 260px;
+  height: 300px;
+  border-radius: var(--photo-radius);
+  overflow: hidden;
+  background: #3d5070;
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: var(--font);
+}
+
+.btn-outline {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-bg);
+}
+
+.btn-outline:hover {
+  background: var(--btn-hover);
+  border-color: var(--btn-hover);
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 32px 56px;
+    align-items: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-right {
+    padding-top: 0;
+  }
+
+  .navbar {
+    padding: 20px 32px 0;
+  }
+
+  .nav-links {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .halo,
+  .name {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    justify-content: center;
+    padding: 16px 16px 0;
+  }
+
+  .nav-btn {
+    padding: 7px 14px;
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding: 32px 20px 48px;
+  }
+
+  .halo,
+  .name {
+    font-size: 1.75rem;
+  }
+
+  .photo-wrapper {
+    width: 200px;
+    height: 230px;
+  }
+
+  .cta-buttons {
+    gap: 10px;
+  }
+}
