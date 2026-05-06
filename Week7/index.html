@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Daily — Premium Coffee Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Coffee<strong>Daily</strong></span>
+      </div>
+      <nav class="navbar__menu">
+        <a href="#home" class="navbar__link active">Home</a>
+        <a href="#menu" class="navbar__link">Menu</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+      <a href="#menu" class="btn btn--primary navbar__cta">Order Now</a>
+      <button class="navbar__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero__container">
+
+      <!-- Left: Text Content -->
+      <div class="hero__content">
+        <p class="hero__tagline">Fresh Roasted Daily</p>
+        <h1 class="hero__headline">
+          It's a Break<br/>
+          <span class="hero__headline--accent">with Coffee</span>
+        </h1>
+        <p class="hero__motto">"Segelas kopi pagi, untuk menyemangati hari"</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">Order Now</a>
+          <a href="#about" class="btn btn--outline">Get To Know About Us!</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">50+</span>
+            <span class="hero__stat-label">Menu Pilihan</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">10K+</span>
+            <span class="hero__stat-label">Pelanggan Puas</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">5★</span>
+            <span class="hero__stat-label">Rating Terbaik</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Decorative + Image -->
+      <div class="hero__visual">
+        <div class="hero__deco-words" aria-hidden="true">
+          <span>COFFEE</span>
+          <span>COFFEE</span>
+          <span>COFFEE</span>
+          <span>COFFEE</span>
+          <span>COFFEE</span>
+          <span>COFFEE</span>
+        </div>
+        <div class="hero__image-wrap">
+          <div class="hero__blob"></div>
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80"
+            alt="Kopi Premium Coffee Daily"
+            class="hero__image"
+          />
+          <div class="hero__badge">
+            <span class="hero__badge-icon">☕</span>
+            <span class="hero__badge-text">Premium Blend</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Scroll indicator -->
+    <div class="hero__scroll">
+      <span>Scroll Down</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORY MENU SECTION ========== -->
+  <section class="category" id="menu">
+    <div class="container">
+      <div class="category__tabs">
+        <button class="category__tab active">
+          <span class="category__tab-icon">☕</span> Coffee
+        </button>
+        <div class="category__divider"></div>
+        <button class="category__tab">
+          <span class="category__tab-icon">🍵</span> Ice Tea
+        </button>
+        <div class="category__divider"></div>
+        <button class="category__tab">
+          <span class="category__tab-icon">🥤</span> Beverage
+        </button>
+        <div class="category__divider"></div>
+        <button class="category__tab">
+          <span class="category__tab-icon">🍊</span> Juices
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCT SECTION ========== -->
+  <section class="featured">
+    <div class="container">
+      <div class="featured__inner">
+
+        <!-- Left: Product Image -->
+        <div class="featured__gallery">
+          <div class="featured__variants">
+            <div class="featured__variant">
+              <img src="img/whitecoffee.jpg" alt="White"/>
+              <span>White</span>
+            </div>
+            <div class="featured__variant">
+              <img src="img/susu.jpg" alt="Milk"/>
+              <span>Milk</span>
+            </div>
+            <div class="featured__variant active">
+              <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=80&q=70" alt="Dark"/>
+              <span>Dark</span>
+            </div>
+          </div>
+          <div class="featured__main-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=500&q=80"
+              alt="Coffee Daily Choco Coffee"
+              class="featured__main-img"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="featured__info">
+          <span class="featured__category-label">☕ Best Seller</span>
+          <h2 class="featured__title">Coffee Daily<br/>Choco Coffee</h2>
+          <div class="featured__rating">
+            <span class="stars">★★★★★</span>
+            <span class="featured__rating-text">4.9 (128 ulasan)</span>
+          </div>
+          <p class="featured__price">Rp 35.000</p>
+          <p class="featured__desc">
+            Minuman kopi coklat premium yang menggabungkan cita rasa kopi arabika pilihan dengan coklat belgia. Perpaduan sempurna antara pahitnya kopi dan manisnya coklat, dapat dinikmati panas maupun dingin sesuai selera.
+          </p>
+          <div class="featured__options">
+            <span class="featured__option-label">Pilih Ukuran:</span>
+            <div class="featured__sizes">
+              <button class="size-btn">S</button>
+              <button class="size-btn active">M</button>
+              <button class="size-btn">L</button>
+            </div>
+          </div>
+          <div class="featured__actions">
+            <div class="qty-control">
+              <button class="qty-btn">−</button>
+              <span class="qty-value">2</span>
+              <button class="qty-btn">+</button>
+            </div>
+            <button class="btn btn--primary featured__cart-btn">
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US SECTION ========== -->
+  <section class="why" id="about">
+    <div class="container">
+      <div class="why__header">
+        <div class="why__header-left">
+          <h2 class="why__title">The Best Taste<br/><span>From The Process</span></h2>
+        </div>
+        <div class="why__header-right">
+          <p class="why__desc">Kopi kami melalui perjalanan dari kebun ke cangkir — dipetik dengan cermat, diolah secara tradisional, dan disajikan dengan penuh cinta untuk menghadirkan rasa terbaik di setiap tegukan.</p>
+        </div>
+      </div>
+      <div class="why__cards">
+        <div class="why__card why__card--dark">
+          <div class="why__card-icon">🤲</div>
+          <h3 class="why__card-title">Hand Roasted</h3>
+          <p class="why__card-text">Setiap biji kopi dipanggang dengan tangan oleh ahli roaster berpengalaman untuk mengunci kesempurnaan rasa.</p>
+        </div>
+        <div class="why__card why__card--accent">
+          <div class="why__card-icon">🌿</div>
+          <h3 class="why__card-title">Direct Trade</h3>
+          <p class="why__card-text">Langsung dari petani lokal pilihan, memastikan kualitas premium dan mendukung komunitas kopi Indonesia.</p>
+        </div>
+        <div class="why__card why__card--dark">
+          <div class="why__card-icon">☘️</div>
+          <h3 class="why__card-title">Organic Taste</h3>
+          <p class="why__card-text">Bahan-bahan alami tanpa bahan kimia berbahaya, untuk kopi yang sehat, bersih, dan menyegarkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR MENU SECTION ========== -->
+  <section class="popular">
+    <div class="container">
+      <div class="popular__header">
+        <div>
+          <p class="section-eyebrow">Menu Pilihan</p>
+          <h2 class="section-title">Our Popular Flavour</h2>
+        </div>
+        <a href="#menu" class="btn btn--outline">Lihat Semua</a>
+      </div>
+
+      <div class="popular__grid">
+
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <div class="product-card__badge">Chocolate</div>
+          <div class="product-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&q=80" alt="Choco Latte" class="product-card__img"/>
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__name">Hand Roasted Choco Latte</h4>
+            <div class="product-card__footer">
+              <span class="product-card__price">Rp 35.000</span>
+              <button class="btn btn--small btn--primary">+ Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card product-card--featured">
+          <div class="product-card__badge">Best Seller</div>
+          <div class="product-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Cappuccino" class="product-card__img"/>
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__name">Classic Cappuccino</h4>
+            <div class="product-card__footer">
+              <span class="product-card__price">Rp 30.000</span>
+              <button class="btn btn--small btn--light">+ Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <div class="product-card__badge">Green</div>
+          <div class="product-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80" alt="Matcha Latte" class="product-card__img"/>
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__name">Matcha Oat Latte</h4>
+            <div class="product-card__footer">
+              <span class="product-card__price">Rp 32.000</span>
+              <button class="btn btn--small btn--primary">+ Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <div class="product-card__badge">Ice</div>
+          <div class="product-card__img-wrap">
+            <img src="img/coldbrew.jpg" alt="Cold Brew" class="product-card__img"/>
+          </div>
+          <div class="product-card__body">
+            <h4 class="product-card__name">Cold Brew Vanilla</h4>
+            <div class="product-card__footer">
+              <span class="product-card__price">Rp 38.000</span>
+              <button class="btn btn--small btn--primary">+ Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dots indicator -->
+      <div class="popular__dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER SECTION ========== -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <div class="newsletter__inner">
+
+        <div class="newsletter__content">
+          <p class="section-eyebrow newsletter__eyebrow">Stay Updated</p>
+          <h2 class="newsletter__title">Dapatkan Update<br/>& Promo Terbaru</h2>
+          <p class="newsletter__desc">
+            Jangan lewatkan penawaran spesial, menu baru, dan diskon eksklusif. Daftarkan email kamu sekarang dan dapatkan voucher gratis kopi pertama!
+          </p>
+          <div class="newsletter__form">
+            <input type="email" class="newsletter__input" placeholder="Masukkan email kamu..." />
+            <button class="btn btn--primary newsletter__btn">Subscribe</button>
+          </div>
+          <p class="newsletter__note">🔒 Privasi terjamin. Tidak ada spam.</p>
+        </div>
+
+        <div class="newsletter__visual">
+          <div class="newsletter__img-ring"></div>
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80"
+            alt="Coffee beans and bag"
+            class="newsletter__img"
+          />
+          <div class="newsletter__floating-tag">
+            <span>☕</span>
+            <span>Free Coffee!</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Coffee<strong>Daily</strong></span>
+          </div>
+          <p class="footer__tagline">Setiap tegukan adalah pengalaman. Nikmati kopi terbaik pilihan kami untuk menemani hari-harimu.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social" aria-label="Twitter">tw</a>
+            <a href="#" class="footer__social" aria-label="TikTok">tt</a>
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Page</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacts -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contacts</h4>
+          <ul class="footer__contact-list">
+            <li>
+              <span class="footer__contact-icon">📍</span>
+              <span>Jl. Ganet No. 17, Tanjungpinang, Kepulauan Riau</span>
+            </li>
+            <li>
+              <span class="footer__contact-icon">📞</span>
+              <span>+62 851-4815-4417</span>
+            </li>
+            <li>
+              <span class="footer__contact-icon">✉️</span>
+              <span>coffedaily@enak.com</span>
+            </li>
+            <li>
+              <span class="footer__contact-icon">🌐</span>
+              <span>www.coffeedaily.id</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Coffee Daily. All rights reserved. Made with ☕ in Tanjungpinang.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
